@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "firestick",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Amazon_Fire_TV_with_remote.JPG",
+    "title": "File:Amazon Fire TV with remote.JPG",
+    "license": "CC BY-SA 3.0",
+    "alt": "Amazon Fire TV Stick with its remote control",
+    "artist": "Ixfd64",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amazon_Fire_TV_with_remote.JPG"
+  },
+  {
+    "slug": "android-tv",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Android_TV-based_Tracer_set_top_box.jpg",
+    "title": "File:Android TV-based Tracer set top box.jpg",
+    "license": "CC BY-SA 4.0",
+    "alt": "Android TV set-top box connected to a television",
+    "artist": "Oliwier Jaszczyszyn of kontrabanda.net website",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Android_TV-based_Tracer_set_top_box.jpg"
+  },
+  {
+    "slug": "smart-tv",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Close_UP_photo_of_lg_c1_oled.jpg",
+    "title": "File:Close UP photo of lg c1 oled.jpg",
+    "license": "CC BY-SA 4.0",
+    "alt": "Close-up of a modern Smart TV panel",
+    "artist": "TECH EDU",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Close_UP_photo_of_lg_c1_oled.jpg"
+  },
+  {
+    "slug": "iphone-ipad",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Apple_iPad.jpg",
+    "title": "File:Apple iPad.jpg",
+    "license": "CC BY-SA 4.0",
+    "alt": "Apple iPad tablet used for streaming",
+    "artist": "\u5f6d\u5bb6\u6770",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_iPad.jpg"
+  },
+  {
+    "slug": "android",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Blackview_A60_Smartphone_Android_mobile_phone_and_folio_case.jpg",
+    "title": "File:Blackview A60 Smartphone Android mobile phone and folio case.jpg",
+    "license": "CC BY-SA 4.0",
+    "alt": "Android smartphone used for mobile streaming",
+    "artist": "Acabashi",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackview_A60_Smartphone_Android_mobile_phone_and_folio_case.jpg"
+  },
+  {
+    "slug": "windows",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Laptop_PC.jpg",
+    "title": "File:Laptop PC.jpg",
+    "license": "CC BY-SA 4.0",
+    "alt": "Windows laptop computer used for streaming setup",
+    "artist": "KK IN HK",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laptop_PC.jpg"
+  },
+  {
+    "slug": "mac",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Apple-desk-laptop-macbook_%2824299816666%29.jpg",
+    "title": "File:Apple-desk-laptop-macbook (24299816666).jpg",
+    "license": "CC0",
+    "alt": "MacBook laptop used for streaming setup",
+    "artist": "www.Pixel.la Free Stock Photos",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apple-desk-laptop-macbook_(24299816666).jpg"
+  },
+  {
+    "slug": "apple-tv",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Apple_TV_4K_4gen_64gb.jpg",
+    "title": "File:Apple TV 4K 4gen 64gb.jpg",
+    "license": "CC BY-SA 4.0",
+    "alt": "Apple TV streaming box",
+    "artist": "Davidbspalding",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_TV_4K_4gen_64gb.jpg"
+  }
+]
