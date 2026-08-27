@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Clock, Mail, MessageCircle, Phone, Send } from "lucide-react";
+import { Clock, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/JsonLd";
@@ -14,27 +14,6 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const channels = [
-  {
-    icon: Mail,
-    title: "Support Email",
-    value: siteConfig.supportEmail,
-    description: "Setup help, account access, and general questions.",
-    href: `mailto:${siteConfig.supportEmail}`,
-  },
-  {
-    icon: MessageCircle,
-    title: "Sales Email",
-    value: siteConfig.salesEmail,
-    description: "Plan questions and help choosing the right subscription.",
-    href: `mailto:${siteConfig.salesEmail}`,
-  },
-  {
-    icon: Send,
-    title: "Telegram",
-    value: "@xtremesiptv",
-    description: "Message us directly for a fast response.",
-    href: siteConfig.social.telegram,
-  },
   {
     icon: Phone,
     title: "WhatsApp",
@@ -73,14 +52,14 @@ export default function ContactPage() {
 
       <section className="relative">
         <Container>
-          <div className="relative z-10 -mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="relative z-10 -mt-10 grid gap-5">
             {channels.map((channel) => (
               <a
                 key={channel.title}
                 href={channel.href}
-                target={channel.href.startsWith("http") ? "_blank" : undefined}
-                rel={channel.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex flex-col rounded-2xl border border-border bg-white p-6 shadow-xl shadow-blue-950/10 transition hover:-translate-y-0.5 hover:border-brand/50 hover:shadow-2xl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-auto flex w-full max-w-sm flex-col rounded-2xl border border-border bg-white p-6 shadow-xl shadow-blue-950/10 transition hover:-translate-y-0.5 hover:border-brand/50 hover:shadow-2xl"
               >
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl brand-gradient text-white">
                   <channel.icon className="h-6 w-6" aria-hidden="true" />
