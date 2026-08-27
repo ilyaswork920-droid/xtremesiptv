@@ -22,6 +22,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata, faqJsonLd } from "@/lib/seo";
 import { devices } from "@/lib/data/devices";
 import { faqHomepagePreview } from "@/lib/data/faq";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = buildMetadata({
   title: "Xtremes IPTV — Premium IPTV Streaming for Any Device",
@@ -155,7 +156,12 @@ export default function HomePage() {
                 support for the screens you already own.
               </p>
               <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
-                <Button href="/pricing" variant="onGradient">
+                <Button
+                  href={siteConfig.social.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="onGradient"
+                >
                   Subscribe →
                 </Button>
                 <Button href="/pricing" variant="onGradientOutline">
@@ -327,7 +333,9 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Button href="/pricing">Subscribe</Button>
+            <Button href={siteConfig.social.whatsapp} target="_blank" rel="noopener noreferrer">
+              Subscribe
+            </Button>
           </div>
         </Container>
       </section>
@@ -340,7 +348,7 @@ export default function HomePage() {
             description="Every plan includes the same core features — the only difference is subscription length and effective monthly cost."
           />
           <div className="mt-14">
-            <PricingCards ctaHref="/pricing" />
+            <PricingCards />
           </div>
           <p className="mt-10 text-center text-sm text-muted">
             See the full feature breakdown on the{" "}

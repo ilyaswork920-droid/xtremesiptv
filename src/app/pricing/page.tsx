@@ -107,7 +107,7 @@ export default function PricingPage() {
       <section className="py-16 sm:py-20">
         <Container>
           <h2 className="sr-only">Xtremes IPTV subscription plans and pricing</h2>
-          <PricingCards ctaHref="/contact" />
+          <PricingCards />
           <p className="mx-auto mt-8 max-w-2xl text-center text-sm text-muted">
             {additionalConnectionNote}
           </p>

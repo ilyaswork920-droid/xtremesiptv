@@ -51,12 +51,14 @@ export function Header() {
           </nav>
 
           <div className="hidden lg:block">
-            <Link
-              href="/pricing"
+            <a
+              href={siteConfig.social.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-950/20 transition hover:brightness-110"
             >
               Subscribe
-            </Link>
+            </a>
           </div>
 
           <button
@@ -88,13 +90,15 @@ export function Header() {
                 </li>
               ))}
             </ul>
-            <Link
-              href="/pricing"
+            <a
+              href={siteConfig.social.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="mt-3 flex items-center justify-center rounded-full bg-brand px-5 py-3 text-sm font-semibold text-white"
             >
               Subscribe
-            </Link>
+            </a>
           </nav>
         ) : null}
       </div>

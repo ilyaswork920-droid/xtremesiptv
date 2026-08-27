@@ -1,8 +1,9 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { plans } from "@/lib/data/plans";
+import { siteConfig } from "@/lib/site-config";
 
-export function PricingCards({ ctaHref }: { ctaHref: string }) {
+export function PricingCards() {
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:items-stretch">
       {plans.map((plan) => (
@@ -42,7 +43,9 @@ export function PricingCards({ ctaHref }: { ctaHref: string }) {
           </ul>
 
           <Button
-            href={ctaHref}
+            href={siteConfig.social.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
             variant={plan.popular ? "primary" : "secondary"}
             className="mt-8 w-full"
           >
