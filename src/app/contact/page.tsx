@@ -53,33 +53,6 @@ export default function ContactPage() {
         </Container>
       </section>
 
-      <section className="relative">
-        <Container>
-          <div className="relative z-10 -mt-10 grid gap-5">
-            {channels.map((channel) => (
-              <a
-                key={channel.title}
-                href={channel.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mx-auto flex w-full max-w-sm flex-col rounded-2xl border border-border bg-white p-6 shadow-xl shadow-blue-950/10 transition hover:-translate-y-0.5 hover:border-brand/50 hover:shadow-2xl"
-              >
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl brand-gradient text-white">
-                  <channel.icon className="h-6 w-6" aria-hidden="true" />
-                </span>
-                <p className="mt-4 text-base font-semibold text-foreground">
-                  {channel.title}
-                </p>
-                <p className="mt-1 text-sm font-medium text-brand">{channel.value}</p>
-                <p className="mt-2 text-sm leading-relaxed text-muted">
-                  {channel.description}
-                </p>
-              </a>
-            ))}
-          </div>
-        </Container>
-      </section>
-
       <section className="py-16 sm:py-20">
         <Container>
           <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-5 lg:items-start">
