@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Clock, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/JsonLd";
@@ -24,6 +24,9 @@ const channels = [
 ];
 
 export default function ContactPage() {
+  const whatsapp = channels[0];
+  const WhatsAppIcon = whatsapp.icon;
+
   return (
     <>
       <JsonLd
@@ -95,28 +98,25 @@ export default function ContactPage() {
             </div>
 
             <div className="lg:col-span-2">
-              <div className="rounded-2xl border border-border bg-surface-2 p-8">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-brand">
-                  <Clock className="h-5 w-5" aria-hidden="true" />
+              <a
+                href={whatsapp.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full flex-col rounded-2xl border border-border bg-white p-6 shadow-xl shadow-blue-950/10 transition hover:-translate-y-0.5 hover:border-brand/50 hover:shadow-2xl"
+              >
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl brand-gradient text-white">
+                  <WhatsAppIcon className="h-6 w-6" aria-hidden="true" />
                 </span>
-                <h2 className="mt-4 text-base font-bold text-foreground">
-                  What to expect
-                </h2>
-                <ul className="mt-4 space-y-3 text-sm leading-relaxed text-muted">
-                  <li>Most messages are answered within a few hours.</li>
-                  <li>Include your device type for faster setup help.</li>
-                  <li>
-                    For billing or refund requests, mention your order details.
-                  </li>
-                </ul>
-                <p className="mt-6 text-sm text-muted">
-                  Looking for quick answers first? Check the{" "}
-                  <a href="/faq" className="text-brand underline underline-offset-2">
-                    FAQ page
-                  </a>
-                  .
+                <p className="mt-4 text-base font-semibold text-foreground">
+                  {whatsapp.title}
                 </p>
-              </div>
+                <p className="mt-1 text-sm font-medium text-brand">
+                  {whatsapp.value}
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted">
+                  {whatsapp.description}
+                </p>
+              </a>
             </div>
           </div>
         </Container>
