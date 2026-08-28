@@ -3,7 +3,7 @@ import type { NextRequest } from "next/server";
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
-  const title = searchParams.get("title") ?? "Xtremes IPTV";
+  const title = searchParams.get("title") ?? "Xtreme HD IPTV";
   const subtitle = searchParams.get("subtitle") ?? "Premium IPTV Streaming";
 
   return new ImageResponse(
@@ -46,7 +46,7 @@ export async function GET(request: NextRequest) {
             X
           </div>
           <span style={{ fontSize: 34, fontWeight: 700, color: "#ffffff" }}>
-            Xtremes IPTV
+            Xtreme HD IPTV
           </span>
         </div>
         <div

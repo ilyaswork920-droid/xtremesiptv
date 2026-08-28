@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   authors: [{ name: siteConfig.name }],
   generator: "Next.js",
   keywords: [
-    "Xtremes IPTV",
+    "Xtreme HD IPTV",
     "IPTV subscription",
     "IPTV streaming",
     "IPTV setup",

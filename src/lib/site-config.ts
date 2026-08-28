@@ -1,14 +1,14 @@
 export const siteConfig = {
-  name: "Xtremes IPTV",
-  shortName: "Xtremes IPTV",
+  name: "Xtreme HD IPTV",
+  shortName: "Xtreme HD IPTV",
   domain: "www.xtremesiptv.com",
   url: "https://www.xtremesiptv.com",
   tagline: "Premium IPTV streaming, set up in minutes",
   description:
-    "Xtremes IPTV is a subscription IPTV service offering live channels, on-demand content, and an electronic program guide across Firestick, Android TV, Smart TV, mobile, and desktop devices.",
+    "Xtreme HD IPTV is a subscription IPTV service offering live channels, on-demand content, and an electronic program guide across Firestick, Android TV, Smart TV, mobile, and desktop devices.",
   supportEmail: "support@xtremesiptv.com",
   salesEmail: "sales@xtremesiptv.com",
-  legalEntity: "Xtremes IPTV",
+  legalEntity: "Xtreme HD IPTV",
   foundingYear: 2026,
   social: {
     telegram: "https://t.me/xtremesiptv",
